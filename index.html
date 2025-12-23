@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Node - Minecraft Server Hosting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-server"></i>
+            <h1>Aura Node</h1>
+        </div>
+
+        <div class="nav-main">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-cube"></i>
+                    <span>Minecraft Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="plans/budget-plan.html" class="category-item">
+                            <div class="category-icon budget">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget Plans</h4>
+                                <p>Affordable hosting</p>
+                            </div>
+                        </a>
+                        <a href="plans/premium-plan.html" class="category-item">
+                            <div class="category-icon premium">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium Plans</h4>
+                                <p>High performance</p>
+                            </div>
+                        </a>
+                        <a href="plans/special-plan.html" class="category-item">
+                            <div class="category-icon special">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special Plans</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-server"></i>
+                    <span>VPS Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="vps/budget-VPS.html" class="category-item">
+                            <div class="category-icon vps-budget">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget VPS</h4>
+                                <p>Intel Xeon VPS</p>
+                            </div>
+                        </a>
+                        <a href="vps/premium-VPS.html" class="category-item">
+                            <div class="category-icon vps-premium">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium VPS</h4>
+                                <p>High-performance</p>
+                            </div>
+                        </a>
+                        <a href="vps/ryzen-VPS.html" class="category-item">
+                            <div class="category-icon vps-ryzen">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Ryzen VPS</h4>
+                                <p>AMD Ryzen 9</p>
+                            </div>
+                        </a>
+                        <a href="vps/special-vps.html" class="category-item">
+                            <div class="category-icon vps-special">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special VPS</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../plans/mc-setup.html" class="nav-item">
+                <i class="fas fa-tools"></i>
+                <span>Setup Services</span>
+            </a>
+
+            <a href="https://discord.com/channels/1387458915062648852/1443647806823993388" target="_blank" class="nav-item discord-item">
+                <i class="fab fa-discord"></i>
+                <span>Join Discord</span>
+                <span class="discord-badge">Live Chat</span>
+            </a>
+        </div>
+
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2><span class="highlight">High-Performance</span> Minecraft Hosting</h2>
+                <p>🚀 India Mumbai Network | ⚙️ Ryzen 9 / Intel Xeon | 🛡️ Enterprise DDoS Protection</p>
+                <p>Choose your plan, join Discord for payment, and get instant setup!</p>
+                <div class="cta-buttons">
+                    <a href="#plans" class="btn-primary">View All Plans</a>
+                    <a href="https://discord.com/channels/1387458915062648852/1443647806823993388" target="_blank" class="btn-secondary">
+                        <i class="fab fa-discord"></i> Join Our Discord
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans-section">
+        <div class="container">
+            <h2 class="section-title">Popular Plans</h2>
+            <p class="section-subtitle">All plans include 24/7 support, DDoS protection, and instant setup</p>
+            <div class="plans-grid">
+                <div class="plan-card budget">
+                    <div class="plan-badge">Budget</div>
+                    <h3 class="plan-name">🧱 Dirt Plan</h3>
+                    <div class="plan-price">
+                        <span class="price-main">৳80</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="plan-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>1 vCore (100%)</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-memory"></i>
+                            <span>2 GB RAM</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>15 GB SSD</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-copy"></i>
+                            <span>1× Backup</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-plug"></i>
+                            <span>1× Port</span>
+                        </div>
+                    </div>
+                    <div class="plan-prices">
+                        <div class="currency">₹55 INR</div>
+                        <div class="currency">$0.72 USD</div>
+                    </div>
+                    <button class="select-plan-btn" data-plan="Dirt Plan - ৳80/month">
+                        <i class="fas fa-shopping-cart"></i> Select Plan
+                    </button>
+                </div>
+                <div class="plan-card premium">
+                    <div class="plan-badge">Premium</div>
+                    <h3 class="plan-name">💎 Diamond Tier</h3>
+                    <div class="plan-price">
+                        <span class="price-main">৳640</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="plan-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>3 Cores</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-memory"></i>
+                            <span>8 GB RAM</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>40 GB SSD</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Ryzen 9</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>DDoS Protection</span>
+                        </div>
+                    </div>
+                    <div class="plan-prices">
+                        <div class="currency">₹460 INR</div>
+                        <div class="currency">$5.22 USD</div>
+                    </div>
+                    <button class="select-plan-btn" data-plan="Diamond Tier - ৳640/month">
+                        <i class="fas fa-shopping-cart"></i> Select Plan
+                    </button>
+                </div>
+                <div class="plan-card ryzen">
+                    <div class="plan-badge">Ryzen VPS</div>
+                    <h3 class="plan-name">Ryzen 9950X Plan 1</h3>
+                    <div class="plan-price">
+                        <span class="price-main">৳2,448</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <div class="plan-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>4 vCore</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-memory"></i>
+                            <span>16 GB DDR5</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>90 GB NVMe Gen4</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Ryzen 9 9950X</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>250 Mbps Uplink</span>
+                        </div>
+                    </div>
+                    <div class="plan-prices">
+                        <div class="currency">₹1,800 INR</div>
+                        <div class="currency">$19.80 USD</div>
+                    </div>
+                    <button class="select-plan-btn" data-plan="Ryzen Plan 1 - ৳2,448/month">
+                        <i class="fas fa-shopping-cart"></i> Select Plan
+                    </button>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <a href="plans/budget-plan.html" class="btn-outline">View All Budget Plans</a>
+                <a href="plans/premium-plan.html" class="btn-outline">View All Premium Plans</a>
+                <a href="vps/ryzen-VPS.html" class="btn-outline">View All Ryzen VPS</a>
+                <a href="vps/budget-VPS.html" class="btn-outline">View Budget VPS</a>
+                <a href="vps/premium-VPS.html" class="btn-outline">View Premium VPS</a>
+                <a href="vps/special-vps.html" class="btn-outline">View Special VPS</a>
+                <a href="plans/special-plan.html" class="btn-outline">View Special Plans</a>
+                <a href="plans/mc-setup.html" class="btn-outline">Setup Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How to Order via Discord</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select Your Plan</h3>
+                    <p>Choose from Budget, Premium, or Ryzen VPS plans</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Join Discord</h3>
+                    <p>Click the Discord button to join our server</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Open Ticket</h3>
+                    <p>Create a ticket in #order-here channel</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Make Payment</h3>
+                    <p>Complete payment via Discord and get instant setup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord CTA -->
+    <section id="discord" class="discord-cta">
+        <div class="container">
+            <div class="discord-content">
+                <i class="fab fa-discord discord-icon"></i>
+                <h2>Ready to Order?</h2>
+                <p>Join our Discord server to place your order and get support</p>
+                <a href="https://discord.com/channels/1387458915062648852/1443647806823993388" target="_blank" class="btn-discord">
+                    <i class="fab fa-discord"></i> Join Discord for Payment
+                </a>
+                <p class="discord-note">💬 After joining, go to #order-here channel and create a ticket</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Selected Plan</h2>
+            <div id="selectedPlanDetails"></div>
+            <div class="modal-instructions">
+                <h3><i class="fab fa-discord"></i> Next Steps:</h3>
+                <ol>
+                    <li>Click the button below to join our Discord</li>
+                    <li>Go to <strong>#order-here</strong> channel</li>
+                    <li>Create a ticket with your selected plan</li>
+                    <li>Our team will assist you with payment</li>
+                </ol>
+            </div>
+            <div class="modal-actions">
+                <a href="https://discord.com/channels/1387458915062648852/1443647806823993388" target="_blank" class="btn-discord-modal">
+                    <i class="fab fa-discord"></i> Join Discord & Complete Order
+                </a>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-server"></i> Aura Node</h3>
+                    <p>High-performance Minecraft Server Hosting</p>
+                    <p>📍 India Mumbai Network</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Payment Methods</h3>
+                    <p><i class="fas fa-credit-card"></i> All payments via Discord</p>
+                    <p>BDT, INR, USD, PKR accepted</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="plans/budget-plan.html">Budget Plans</a></p>
+                    <p><a href="vps/premium-VPS.html">Premium VPS</a></p>
+                    <p><a href="plans/special-plan.html">Special Offers</a></p>
+                    <p><a href="mc-setup.html">Setup Services</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura Node Hosting. All prices in BDT/month unless specified.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
