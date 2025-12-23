@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special VPS Offers - Aura Node</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-server"></i>
+            <h1>Aura Node</h1>
+        </div>
+
+        <div class="nav-main">
+            <a href="../index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-cube"></i>
+                    <span>Minecraft Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="../plans/budget-plan.html" class="category-item">
+                            <div class="category-icon budget">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget Plans</h4>
+                                <p>Affordable hosting</p>
+                            </div>
+                        </a>
+                        <a href="../plans/premium-plan.html" class="category-item">
+                            <div class="category-icon premium">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium Plans</h4>
+                                <p>High performance</p>
+                            </div>
+                        </a>
+                        <a href="../plans/special-plan.html" class="category-item">
+                            <div class="category-icon special">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special Plans</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-server"></i>
+                    <span>VPS Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="budget-VPS.html" class="category-item">
+                            <div class="category-icon vps-budget">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget VPS</h4>
+                                <p>Intel Xeon VPS</p>
+                            </div>
+                        </a>
+                        <a href="premium-VPS.html" class="category-item">
+                            <div class="category-icon vps-premium">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium VPS</h4>
+                                <p>High-performance</p>
+                            </div>
+                        </a>
+                        <a href="ryzen-VPS.html" class="category-item">
+                            <div class="category-icon vps-ryzen">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Ryzen VPS</h4>
+                                <p>AMD Ryzen 9</p>
+                            </div>
+                        </a>
+                        <a href="special-vps.html" class="category-item">
+                            <div class="category-icon vps-special">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special VPS</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="../plans/mc-setup.html" class="nav-item">
+                <i class="fas fa-tools"></i>
+                <span>Setup Services</span>
+            </a>
+
+            <a href="https://discord.com/channels/1387458915062648852/1447289743573385458" target="_blank" class="nav-item discord-item">
+                <i class="fab fa-discord"></i>
+                <span>Join Discord</span>
+                <span class="discord-badge">Live Chat</span>
+            </a>
+        </div>
+
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+    <!-- Page Header -->
+    <section class="page-header special-vps-header">
+        <div class="container">
+            <h1><i class="fas fa-gem"></i> Special VPS Offers</h1>
+            <p class="header-subtitle">⚡ Limited Edition VPS Deals with Premium Features ⚡</p>
+            <p>Exclusive VPS plans with high specifications at unbeatable prices</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Special VPS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stock Alert -->
+    <section class="stock-alert">
+        <div class="container">
+            <div class="alert-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="alert-text">
+                    <h3>Limited Stock Available!</h3>
+                    <p>These special VPS offers have limited availability. Order now before they run out!</p>
+                </div>
+                <div class="stock-counter">
+                    <span class="stock-label">Stock Left:</span>
+                    <span class="stock-value" id="stockCount">15/20</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-vps-plans">
+        <div class="container">
+            <div class="vps-grid">
+                <!-- Main Special VPS -->
+                <div class="special-vps-main">
+                    <div class="vps-badge">
+                        <i class="fas fa-fire"></i> HOT DEAL
+                    </div>
+
+                    <div class="vps-header">
+                        <h2>Special VPS Offer</h2>
+                        <div class="vps-tags">
+                            <span class="tag">Limited Edition</span>
+                            <span class="tag">Best Value</span>
+                            <span class="tag">cPanel Included</span>
+                        </div>
+                    </div>
+
+                    <div class="vps-specs-grid">
+                        <!-- Column 1 -->
+                        <div class="spec-column">
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>RAM</h4>
+                                    <p class="spec-value">32 GB ECC</p>
+                                    <p class="spec-desc">Error Correcting Memory</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>CPU</h4>
+                                    <p class="spec-value">4 vCore</p>
+                                    <p class="spec-desc">INTEL XEON E5-2680 @ 3.7GHz Turbo</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-hdd"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Storage</h4>
+                                    <p class="spec-value">200 GB</p>
+                                    <p class="spec-desc">SATA SSD (High Performance)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="spec-column">
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>DDoS Protection</h4>
+                                    <p class="spec-value">Enterprise Grade</p>
+                                    <p class="spec-desc">Fully Protected</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Bandwidth</h4>
+                                    <p class="spec-value">Up to 3TB</p>
+                                    <p class="spec-desc">Fair Use Policy</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Network Speed</h4>
+                                    <p class="spec-value">250 Mbps</p>
+                                    <p class="spec-desc">Guaranteed Uplink</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="spec-column">
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Uptime</h4>
+                                    <p class="spec-value">100%</p>
+                                    <p class="spec-desc">Service Guarantee</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Delivery</h4>
+                                    <p class="spec-value">Instant</p>
+                                    <p class="spec-desc">Setup within minutes</p>
+                                </div>
+                            </div>
+
+                            <div class="spec-card">
+                                <div class="spec-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="spec-details">
+                                    <h4>Control Panel</h4>
+                                    <p class="spec-value">cPanel Included</p>
+                                    <p class="spec-desc">Professional hosting panel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Section -->
+                    <div class="vps-pricing">
+                        <div class="pricing-header">
+                            <h3>Monthly Pricing</h3>
+                            <div class="billing-cycle">
+                                <span class="cycle active" data-cycle="monthly">Monthly</span>
+                                <span class="cycle" data-cycle="quarterly">Quarterly (-10%)</span>
+                                <span class="cycle" data-cycle="yearly">Yearly (-20%)</span>
+                            </div>
+                        </div>
+
+                        <div class="price-cards">
+                            <div class="price-card">
+                                <div class="country-flag">🇮🇳</div>
+                                <h4>India</h4>
+                                <div class="price-amount monthly">₹500</div>
+                                <div class="price-amount quarterly" style="display: none;">₹1,350</div>
+                                <div class="price-amount yearly" style="display: none;">₹4,800</div>
+                                <p class="price-period">INR per month</p>
+                            </div>
+
+                            <div class="price-card">
+                                <div class="country-flag">🇵🇰</div>
+                                <h4>Pakistan</h4>
+                                <div class="price-amount monthly">₨ 1,800</div>
+                                <div class="price-amount quarterly" style="display: none;">₨ 4,860</div>
+                                <div class="price-amount yearly" style="display: none;">₨ 17,280</div>
+                                <p class="price-period">PKR per month (approx)</p>
+                            </div>
+
+                            <div class="price-card featured">
+                                <div class="country-flag">🇧🇩</div>
+                                <h4>Bangladesh</h4>
+                                <div class="price-amount monthly">৳ 650</div>
+                                <div class="price-amount quarterly" style="display: none;">৳ 1,755</div>
+                                <div class="price-amount yearly" style="display: none;">৳ 6,240</div>
+                                <p class="price-period">BDT per month (approx)</p>
+                                <div class="featured-badge">Most Popular</div>
+                            </div>
+
+                            <div class="price-card">
+                                <div class="country-flag">🇺🇸</div>
+                                <h4>International</h4>
+                                <div class="price-amount monthly">$6.00</div>
+                                <div class="price-amount quarterly" style="display: none;">$16.20</div>
+                                <div class="price-amount yearly" style="display: none;">$57.60</div>
+                                <p class="price-period">USD per month (approx)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stock Progress -->
+                    <div class="stock-progress">
+                        <div class="progress-header">
+                            <span class="progress-label">Limited Stock Available:</span>
+                            <span class="progress-count">15/20 Sold</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <p class="progress-note"><i class="fas fa-exclamation-circle"></i> Only 5 slots remaining at this price!</p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="vps-actions">
+                        <button class="btn-order-now" id="orderNow">
+                            <i class="fas fa-bolt"></i> Order Now
+                        </button>
+                        <button class="btn-whats-included">
+                            <i class="fas fa-info-circle"></i> What's Included
+                        </button>
+                        <button class="btn-compare">
+                            <i class="fas fa-balance-scale"></i> Compare Plans
+                        </button>
+                    </div>
+
+                    <!-- Note -->
+                    <div class="vps-note">
+                        <i class="fas fa-sticky-note"></i>
+                        <strong>Note:</strong> Make a ticket in Discord to purchase this special VPS offer.
+                    </div>
+                </div>
+
+                <!-- Other Special VPS (Sidebar) -->
+                <div class="other-special-vps">
+                    <h3>Other Special Offers</h3>
+                    
+                    <div class="mini-vps-card">
+                        <div class="mini-badge">SAVE 30%</div>
+                        <h4>Ryzen 16GB Special</h4>
+                        <div class="mini-specs">
+                            <p><i class="fas fa-memory"></i> 16GB DDR5</p>
+                            <p><i class="fas fa-microchip"></i> 4 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 100GB NVMe</p>
+                        </div>
+                        <div class="mini-price">
+                            <span class="original">৳2,000</span>
+                            <span class="special">৳1,400</span>
+                        </div>
+                        <button class="btn-mini-select">View Details</button>
+                    </div>
+
+                    <div class="mini-vps-card">
+                        <div class="mini-badge">SAVE 25%</div>
+                        <h4>Intel 64GB Beast</h4>
+                        <div class="mini-specs">
+                            <p><i class="fas fa-memory"></i> 64GB DDR4</p>
+                            <p><i class="fas fa-microchip"></i> 8 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 500GB SSD</p>
+                        </div>
+                        <div class="mini-price">
+                            <span class="original">৳4,500</span>
+                            <span class="special">৳3,375</span>
+                        </div>
+                        <button class="btn-mini-select">View Details</button>
+                    </div>
+
+                    <div class="mini-vps-card">
+                        <div class="mini-badge">SAVE 40%</div>
+                        <h4>Budget 8GB VPS</h4>
+                        <div class="mini-specs">
+                            <p><i class="fas fa-memory"></i> 8GB DDR4</p>
+                            <p><i class="fas fa-microchip"></i> 2 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 80GB SSD</p>
+                        </div>
+                        <div class="mini-price">
+                            <span class="original">৳1,200</span>
+                            <span class="special">৳720</span>
+                        </div>
+                        <button class="btn-mini-select">View Details</button>
+                    </div>
+
+                    <div class="discord-help">
+                        <i class="fab fa-discord"></i>
+                        <h4>Need Help Choosing?</h4>
+                        <p>Join our Discord for expert advice on selecting the right VPS</p>
+                        <a href="https://discord.com/channels/1387458915062648852/" target="_blank" class="btn-discord-help">
+                            <i class="fab fa-discord"></i> Get Help on Discord
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Included -->
+    <section class="features-included">
+        <div class="container">
+            <h2 class="section-title">Everything Included</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cpanel"></i>
+                    </div>
+                    <h3>cPanel License</h3>
+                    <p>Full cPanel/WHM license included at no extra cost</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>DDoS Protection</h3>
+                    <p>Enterprise-level DDoS protection included</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Setup</h3>
+                    <p>Server provisioned within 15 minutes of payment</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical support via Discord</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-backup"></i>
+                    </div>
+                    <h3>Daily Backups</h3>
+                    <p>Automatic daily backups included</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>OS Choices</h3>
+                    <p>Choice of Ubuntu, CentOS, or Debian</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="vps-comparison">
+        <div class="container">
+            <h2 class="section-title">Why Choose This Special VPS?</h2>
+            
+            <div class="comparison-table-wrapper">
+                <table class="vps-comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Regular VPS</th>
+                            <th>Special VPS</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RAM</td>
+                            <td>16GB DDR4</td>
+                            <td><strong>32GB ECC RAM</strong></td>
+                            <td><span class="value-up">+100%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>100GB SSD</td>
+                            <td><strong>200GB SATA SSD</strong></td>
+                            <td><span class="value-up">+100%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Control Panel</td>
+                            <td>Additional Cost</td>
+                            <td><strong>cPanel Included</strong></td>
+                            <td><span class="value-up">FREE</span></td>
+                        </tr>
+                        <tr>
+                            <td>DDoS Protection</td>
+                            <td>Basic</td>
+                            <td><strong>Enterprise Grade</strong></td>
+                            <td><span class="value-up">Premium</span></td>
+                        </tr>
+                        <tr>
+                            <td>Price (BDT/month)</td>
+                            <td>৳1,200</td>
+                            <td><strong>৳650</strong></td>
+                            <td><span class="value-down">-46%</span></td>
+                        </tr>
+                        <tr>
+                            <td>Setup Time</td>
+                            <td>4-24 hours</td>
+                            <td><strong>Instant</strong></td>
+                            <td><span class="value-up">Immediate</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="vps-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What is ECC RAM?</h3>
+                    <p>ECC (Error-Correcting Code) RAM detects and corrects internal data corruption, making it more reliable than standard RAM for critical applications.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Is cPanel really included?</h3>
+                    <p>Yes! We include a full cPanel/WHM license at no additional cost, which normally costs $15-20/month separately.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What is "Fair Use" bandwidth?</h3>
+                    <p>You get up to 3TB of monthly transfer. As long as you use it reasonably for hosting purposes, you won't face any restrictions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How long is this offer available?</h3>
+                    <p>This is a limited-time offer with only 20 slots available. Once sold out, the price will increase to regular rates.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I install any OS?</h3>
+                    <p>Yes! You can choose from Ubuntu, CentOS, Debian, or provide your own custom ISO during setup.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What payment methods are accepted?</h3>
+                    <p>We accept bKash, Nagad, Upay (Bangladesh), UPI (India), and international payments via PayPal and bank transfer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="discord-cta special-vps-cta">
+        <div class="container">
+            <div class="discord-content">
+                <i class="fas fa-gem discord-icon"></i>
+                <h2>Don't Miss This Limited Offer!</h2>
+                <p>Only a few slots remaining at this special price. Join Discord now to secure your VPS!</p>
+                <a href="https://discord.com/channels/1387458915062648852/1447289743573385458" target="_blank" class="btn-discord-special">
+                    <i class="fab fa-discord"></i> Join Discord & Order VPS
+                </a>
+                <p class="discord-note">🎟️ Create a ticket in #vps-orders channel with "SPECIAL VPS" in the title</p>
+                
+                <div class="urgency-box">
+                    <div class="urgency-item">
+                        <i class="fas fa-users"></i>
+                        <span>Only <strong id="remainingSlots">5</strong> slots left</span>
+                    </div>
+                    <div class="urgency-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Offer ends in: <strong id="offerTimer">48:00:00</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Special VPS Order</h2>
+            
+            <div class="order-summary">
+                <h3>Special VPS Offer - 32GB ECC</h3>
+                <div class="order-specs">
+                    <div class="order-spec">
+                        <i class="fas fa-memory"></i>
+                        <span>32GB ECC RAM</span>
+                    </div>
+                    <div class="order-spec">
+                        <i class="fas fa-microchip"></i>
+                        <span>4 vCore Xeon E5-2680</span>
+                    </div>
+                    <div class="order-spec">
+                        <i class="fas fa-hdd"></i>
+                        <span>200GB SATA SSD</span>
+                    </div>
+                    <div class="order-spec">
+                        <i class="fas fa-cpanel"></i>
+                        <span>cPanel Included</span>
+                    </div>
+                </div>
+                
+                <div class="order-pricing">
+                    <h4>Select Your Currency:</h4>
+                    <div class="currency-options">
+                        <label class="currency-option">
+                            <input type="radio" name="currency" value="bdt" checked>
+                            <span class="currency-flag">🇧🇩</span>
+                            <span class="currency-name">Bangladesh (BDT)</span>
+                            <span class="currency-price">৳650/month</span>
+                        </label>
+                        <label class="currency-option">
+                            <input type="radio" name="currency" value="inr">
+                            <span class="currency-flag">🇮🇳</span>
+                            <span class="currency-name">India (INR)</span>
+                            <span class="currency-price">₹500/month</span>
+                        </label>
+                        <label class="currency-option">
+                            <input type="radio" name="currency" value="pkr">
+                            <span class="currency-flag">🇵🇰</span>
+                            <span class="currency-name">Pakistan (PKR)</span>
+                            <span class="currency-price">₨1,800/month</span>
+                        </label>
+                        <label class="currency-option">
+                            <input type="radio" name="currency" value="usd">
+                            <span class="currency-flag">🇺🇸</span>
+                            <span class="currency-name">International (USD)</span>
+                            <span class="currency-price">$6.00/month</span>
+                        </label>
+                    </div>
+                    
+                    <div class="billing-options">
+                        <h4>Billing Cycle:</h4>
+                        <div class="billing-buttons">
+                            <button class="billing-btn active" data-months="1">Monthly</button>
+                            <button class="billing-btn" data-months="3">Quarterly (Save 10%)</button>
+                            <button class="billing-btn" data-months="12">Yearly (Save 20%)</button>
+                        </div>
+                    </div>
+                    
+                    <div class="total-price">
+                        <span>Total:</span>
+                        <span class="total-amount">৳650</span>
+                        <span class="total-period">per month</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-instructions">
+                <h3><i class="fab fa-discord"></i> How to Order:</h3>
+                <ol>
+                    <li>Click the button below to join Discord</li>
+                    <li>Go to <strong>#vps-orders</strong> channel</li>
+                    <li>Create a ticket with "SPECIAL VPS ORDER"</li>
+                    <li>Mention your preferred currency and billing cycle</li>
+                    <li>Complete payment and get instant setup</li>
+                </ol>
+                <div class="order-note">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <strong>Important:</strong> This offer is first-come, first-served. Your slot is only reserved after payment.
+                </div>
+            </div>
+            
+            <div class="modal-actions">
+                <a href="https://discord.com/channels/1387458915062648852/1447289743573385458" target="_blank" class="btn-discord-modal">
+                    <i class="fab fa-discord"></i> Proceed to Discord
+                </a>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-gem"></i> Special VPS Offers</h3>
+                    <p>Limited Edition VPS with Premium Features</p>
+                    <p>📍 cPanel Included • Instant Setup • 24/7 Support</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Limited Stock</h3>
+                    <p><i class="fas fa-box"></i> Only 20 slots available</p>
+                    <p><i class="fas fa-clock"></i> Limited time offer</p>
+                    <p><i class="fas fa-tag"></i> Best price guaranteed</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Regular VPS</h3>
+                    <p><a href="budget-VPS.html">Budget VPS Plans</a></p>
+                    <p><a href="premium-VPS.html">Premium VPS Plans</a></p>
+                    <p><a href="ryzen-VPS.html">Ryzen VPS Plans</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura Node Hosting. Special VPS Offer - Limited stock available. cPanel license included at no extra cost.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Special VPS page scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Stock counter simulation
+            let stockCount = 15;
+            const stockElement = document.getElementById('stockCount');
+            const remainingSlots = document.getElementById('remainingSlots');
+            const progressFill = document.querySelector('.progress-fill');
+            
+            function updateStock() {
+                stockElement.textContent = `${stockCount}/20`;
+                remainingSlots.textContent = stockCount;
+                const progressPercent = ((20 - stockCount) / 20) * 100;
+                progressFill.style.width = `${progressPercent}%`;
+            }
+            
+            // Simulate stock decreasing occasionally
+            setInterval(() => {
+                if (stockCount > 5 && Math.random() > 0.9) {
+                    stockCount--;
+                    updateStock();
+                }
+            }, 30000);
+            
+            // Billing cycle toggle
+            const billingButtons = document.querySelectorAll('.billing-btn');
+            billingButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    billingButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const months = this.getAttribute('data-months');
+                    document.querySelectorAll('.price-amount').forEach(amount => {
+                        amount.style.display = 'none';
+                    });
+                    document.querySelectorAll(`.price-amount[data-cycle="${months}"]`).forEach(amount => {
+                        amount.style.display = 'block';
+                    });
+                });
+            });
+            
+            // Cycle toggles
+            const cycleToggles = document.querySelectorAll('.cycle');
+            cycleToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    cycleToggles.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const cycle = this.getAttribute('data-cycle');
+                    // Update pricing display based on cycle
+                    const prices = {
+                        monthly: {bdt: '৳650', inr: '₹500', pkr: '₨1,800', usd: '$6.00'},
+                        quarterly: {bdt: '৳1,755', inr: '₹1,350', pkr: '₨4,860', usd: '$16.20'},
+                        yearly: {bdt: '৳6,240', inr: '₹4,800', pkr: '₨17,280', usd: '$57.60'}
+                    };
+                    
+                    // Update price cards
+                    document.querySelectorAll('.price-card').forEach((card, index) => {
+                        const currencies = ['inr', 'pkr', 'bdt', 'usd'];
+                        const currency = currencies[index];
+                        const priceElement = card.querySelector('.price-amount');
+                        priceElement.textContent = prices[cycle][currency];
+                    });
+                });
+            });
+            
+            // Order Now button
+            const orderNowBtn = document.getElementById('orderNow');
+            const orderModal = document.getElementById('orderModal');
+            const closeModal = orderModal.querySelector('.close-modal');
+            const cancelBtn = orderModal.querySelector('.btn-cancel');
+            
+            orderNowBtn.addEventListener('click', function() {
+                orderModal.style.display = 'block';
+            });
+            
+            closeModal.addEventListener('click', function() {
+                orderModal.style.display = 'none';
+            });
+            
+            cancelBtn.addEventListener('click', function() {
+                orderModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(event) {
+                if (event.target === orderModal) {
+                    orderModal.style.display = 'none';
+                }
+            });
+            
+            // Currency selection in modal
+            const currencyOptions = document.querySelectorAll('.currency-option input');
+            currencyOptions.forEach(option => {
+                option.addEventListener('change', function() {
+                    const prices = {
+                        bdt: {monthly: '৳650', quarterly: '৳1,755', yearly: '৳6,240'},
+                        inr: {monthly: '₹500', quarterly: '₹1,350', yearly: '₹4,800'},
+                        pkr: {monthly: '₨1,800', quarterly: '₨4,860', yearly: '₨17,280'},
+                        usd: {monthly: '$6.00', quarterly: '$16.20', yearly: '$57.60'}
+                    };
+                    
+                    const currency = this.value;
+                    const activeCycle = document.querySelector('.billing-btn.active').getAttribute('data-months');
+                    const cycleKey = activeCycle === '1' ? 'monthly' : activeCycle === '3' ? 'quarterly' : 'yearly';
+                    
+                    document.querySelector('.total-amount').textContent = prices[currency][cycleKey];
+                    document.querySelector('.total-period').textContent = 
+                        activeCycle === '1' ? 'per month' : activeCycle === '3' ? 'for 3 months' : 'for 1 year';
+                });
+            });
+            
+            // Billing selection in modal
+            const billingBtns = document.querySelectorAll('.billing-btn');
+            billingBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    billingBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const months = this.getAttribute('data-months');
+                    const selectedCurrency = document.querySelector('.currency-option input:checked').value;
+                    
+                    const prices = {
+                        bdt: {1: '৳650', 3: '৳1,755', 12: '৳6,240'},
+                        inr: {1: '₹500', 3: '₹1,350', 12: '₹4,800'},
+                        pkr: {1: '₨1,800', 3: '₨4,860', 12: '₨17,280'},
+                        usd: {1: '$6.00', 3: '$16.20', 12: '$57.60'}
+                    };
+                    
+                    document.querySelector('.total-amount').textContent = prices[selectedCurrency][months];
+                    document.querySelector('.total-period').textContent = 
+                        months === '1' ? 'per month' : months === '3' ? 'for 3 months' : 'for 1 year';
+                });
+            });
+            
+            // Mini VPS card buttons
+            document.querySelectorAll('.btn-mini-select').forEach(button => {
+                button.addEventListener('click', function() {
+                    const vpsName = this.closest('.mini-vps-card').querySelector('h4').textContent;
+                    alert(`More details about ${vpsName} coming soon!\n\nJoin Discord for complete specifications.`);
+                });
+            });
+            
+            // Offer timer
+            function updateOfferTimer() {
+                const endTime = new Date();
+                endTime.setHours(endTime.getHours() + 48); // 48 hours from now
+                
+                const now = new Date();
+                const diff = endTime - now;
+                
+                if (diff <= 0) {
+                    document.getElementById('offerTimer').textContent = "EXPIRED";
+                    return;
+                }
+                
+                const hours = Math.floor(diff / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('offerTimer').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+            
+            setInterval(updateOfferTimer, 1000);
+            updateOfferTimer();
+            
+            // What's Included button
+            document.querySelector('.btn-whats-included')?.addEventListener('click', function() {
+                document.querySelector('.features-included').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Compare button
+            document.querySelector('.btn-compare')?.addEventListener('click', function() {
+                document.querySelector('.vps-comparison').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

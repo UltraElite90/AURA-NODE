@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Minecraft Plans - Aura Node</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-server"></i>
+            <h1>Aura Node</h1>
+        </div>
+
+        <div class="nav-main">
+            <a href="../index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+
+            <!-- Minecraft Plans - Horizontal Card -->
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-cube"></i>
+                    <span>Minecraft Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="budget-plan.html" class="category-item">
+                            <div class="category-icon budget">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget Plans</h4>
+                                <p>Affordable hosting</p>
+                            </div>
+                        </a>
+                        <a href="premium-plan.html" class="category-item">
+                            <div class="category-icon premium">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium Plans</h4>
+                                <p>High performance</p>
+                            </div>
+                        </a>
+                        <a href="special-plan.html" class="category-item">
+                            <div class="category-icon special">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special Plans</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-category">
+                <div class="category-header">
+                    <i class="fas fa-server"></i>
+                    <span>VPS Plans</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="category-dropdown">
+                    <div class="category-grid">
+                        <a href="../VPS/budget-VPS.html" class="category-item">
+                            <div class="category-icon vps-budget">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Budget VPS</h4>
+                                <p>Intel Xeon VPS</p>
+                            </div>
+                        </a>
+                        <a href="../VPS/premium-VPS.html" class="category-item">
+                            <div class="category-icon vps-premium">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Premium VPS</h4>
+                                <p>High-performance</p>
+                            </div>
+                        </a>
+                        <a href="../VPS/ryzen-VPS.html" class="category-item">
+                            <div class="category-icon vps-ryzen">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Ryzen VPS</h4>
+                                <p>AMD Ryzen 9</p>
+                            </div>
+                        </a>
+                        <a href="../VPS/special-vps.html" class="category-item">
+                            <div class="category-icon vps-special">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="category-info">
+                                <h4>Special VPS</h4>
+                                <p>Limited offers</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="mc-setup.html" class="nav-item">
+                <i class="fas fa-tools"></i>
+                <span>Setup Services</span>
+            </a>
+
+            <a href="https://discord.com/channels/1387458915062648852/1443653688236441640" target="_blank" class="nav-item discord-item">
+                <i class="fab fa-discord"></i>
+                <span>Join Discord</span>
+                <span class="discord-badge">Live Chat</span>
+            </a>
+        </div>
+
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+    <!-- Page Header -->
+    <section class="page-header special-header">
+        <div class="container">
+            <h1><i class="fas fa-star"></i> Special Minecraft Plans</h1>
+            <p class="header-subtitle">✨ Limited Time Offers & Exclusive Deals ✨</p>
+            <p>Get premium performance at special prices with our exclusive limited-time offers</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Special Plans</span>
+            </div>
+            <div class="special-badge">
+                <i class="fas fa-bolt"></i> LIMITED TIME OFFER
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Banner -->
+    <section class="special-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2><i class="fas fa-fire"></i> Flash Sale Active!</h2>
+                    <p>Limited slots available for these special plans. Offer ends soon!</p>
+                    <div class="timer">
+                        <div class="timer-item">
+                            <span id="days">00</span>
+                            <small>Days</small>
+                        </div>
+                        <div class="timer-item">
+                            <span id="hours">00</span>
+                            <small>Hours</small>
+                        </div>
+                        <div class="timer-item">
+                            <span id="minutes">00</span>
+                            <small>Minutes</small>
+                        </div>
+                        <div class="timer-item">
+                            <span id="seconds">00</span>
+                            <small>Seconds</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-discount">
+                    <span class="discount-badge">SPECIAL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Plans Section -->
+    <section class="plans-page">
+        <div class="container">
+            <div class="plans-header">
+                <h2>Exclusive Special Plans</h2>
+                <p class="subtitle">Limited time offers with premium specifications at discounted prices</p>
+            </div>
+
+            <div class="special-plans-container">
+                <!-- Power Pack Plan (Main Special) -->
+                <div class="special-plan-card">
+                    <div class="special-badge-top">
+                        <i class="fas fa-bolt"></i> MOST POPULAR
+                    </div>
+                    <div class="plan-emoji">✨</div>
+                    <h3 class="plan-name-special">RYZEN 32GB VPS – POWER PACK PLAN</h3>
+                    <div class="special-price">
+                        <span class="original-price">₹3,500</span>
+                        <span class="discount-price">₹1,900</span>
+                        <span class="discount-percent">46% OFF</span>
+                    </div>
+                    <div class="plan-specs-special">
+                        <div class="spec-item-special">
+                            <i class="fas fa-microchip"></i>
+                            <div class="spec-details">
+                                <strong>CPU:</strong>
+                                <span class="spec-value">12 Ryzen Cores</span>
+                            </div>
+                        </div>
+                        <div class="spec-item-special">
+                            <i class="fas fa-memory"></i>
+                            <div class="spec-details">
+                                <strong>RAM:</strong>
+                                <span class="spec-value">32 GB DDR5 (5200 MHz)</span>
+                            </div>
+                        </div>
+                        <div class="spec-item-special">
+                            <i class="fas fa-hdd"></i>
+                            <div class="spec-details">
+                                <strong>Storage:</strong>
+                                <span class="spec-value">202400 MB NVMe SSD</span>
+                            </div>
+                        </div>
+                        <div class="spec-item-special">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div class="spec-details">
+                                <strong>Host CPU:</strong>
+                                <span class="spec-value">AMD Ryzen™ 9 9950X</span>
+                            </div>
+                        </div>
+                        <div class="spec-item-special">
+                            <i class="fas fa-clock"></i>
+                            <div class="spec-details">
+                                <strong>Base Clock:</strong>
+                                <span class="spec-value">4.50 GHz</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="special-features">
+                        <div class="feature-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>No Extra Taxes – Fixed Price</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Superfast Performance</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Smooth, Stable & Optimized</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant Setup</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Priority Support</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-prices-multi-special">
+                        <div class="price-tag-special">
+                            <span class="currency">INR</span>
+                            <span class="amount">₹1,900</span>
+                        </div>
+                        <div class="price-tag-special">
+                            <span class="currency">BDT</span>
+                            <span class="amount">৳2,584</span>
+                        </div>
+                        <div class="price-tag-special">
+                            <span class="currency">USD</span>
+                            <span class="amount">$20.90</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stock-info">
+                        <i class="fas fa-box-open"></i>
+                        <span>Only 5 slots remaining!</span>
+                    </div>
+                    
+                    <button class="select-plan-btn-special" data-plan="RYZEN 32GB VPS POWER PACK - ₹1,900/month">
+                        <i class="fas fa-bolt"></i> Grab This Deal!
+                    </button>
+                    
+                    <div class="plan-benefits">
+                        <p><i class="fas fa-gamepad"></i> Perfect for 200+ player servers</p>
+                        <p><i class="fas fa-layer-group"></i> Ideal for modpacks & plugins</p>
+                        <p><i class="fas fa-chart-line"></i> Enterprise-level performance</p>
+                    </div>
+                </div>
+
+                <!-- Additional Special Plans (Sample) -->
+                <div class="special-plan-grid">
+                    <!-- Special Plan 2 -->
+                    <div class="special-plan-small">
+                        <div class="small-badge">SAVE 30%</div>
+                        <h4>Diamond+ Special</h4>
+                        <div class="small-price">
+                            <span class="original">₹600</span>
+                            <span class="special">₹420</span>
+                        </div>
+                        <div class="small-specs">
+                            <p><i class="fas fa-memory"></i> 12GB RAM</p>
+                            <p><i class="fas fa-microchip"></i> 4 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 60GB NVMe</p>
+                        </div>
+                        <button class="btn-small-select">Select</button>
+                    </div>
+
+                    <!-- Special Plan 3 -->
+                    <div class="special-plan-small">
+                        <div class="small-badge">SAVE 25%</div>
+                        <h4>Netherite Pro</h4>
+                        <div class="small-price">
+                            <span class="original">₹1,200</span>
+                            <span class="special">₹900</span>
+                        </div>
+                        <div class="small-specs">
+                            <p><i class="fas fa-memory"></i> 20GB RAM</p>
+                            <p><i class="fas fa-microchip"></i> 6 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 100GB NVMe</p>
+                        </div>
+                        <button class="btn-small-select">Select</button>
+                    </div>
+
+                    <!-- Special Plan 4 -->
+                    <div class="special-plan-small">
+                        <div class="small-badge">SAVE 40%</div>
+                        <h4>Ender Dragon Lite</h4>
+                        <div class="small-price">
+                            <span class="original">₹2,000</span>
+                            <span class="special">₹1,200</span>
+                        </div>
+                        <div class="small-specs">
+                            <p><i class="fas fa-memory"></i> 24GB RAM</p>
+                            <p><i class="fas fa-microchip"></i> 8 Cores</p>
+                            <p><i class="fas fa-hdd"></i> 120GB NVMe</p>
+                        </div>
+                        <button class="btn-small-select">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Special Plans -->
+    <section class="why-special">
+        <div class="container">
+            <h2>Why Choose Special Plans?</h2>
+            <div class="special-benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Big Savings</h3>
+                    <p>Get premium specifications at discounted prices with up to 46% off regular rates</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Premium Hardware</h3>
+                    <p>Latest Ryzen processors and DDR5 RAM for ultimate performance</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Limited Time</h3>
+                    <p>Exclusive offers available for a short period only</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Priority Support</h3>
+                    <p>Get faster response times and dedicated assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="special-comparison">
+        <div class="container">
+            <h2>Special Plan vs Regular Plans</h2>
+            <div class="comparison-chart">
+                <div class="chart-row header">
+                    <div class="chart-item">Feature</div>
+                    <div class="chart-item">Regular Plan</div>
+                    <div class="chart-item">Special Plan</div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-item">Price (for 32GB)</div>
+                    <div class="chart-item">₹3,500</div>
+                    <div class="chart-item highlight">₹1,900</div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-item">RAM Type</div>
+                    <div class="chart-item">DDR4</div>
+                    <div class="chart-item highlight">DDR5 5200MHz</div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-item">CPU</div>
+                    <div class="chart-item">Ryzen 9</div>
+                    <div class="chart-item highlight">Ryzen 9 9950X</div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-item">Storage Type</div>
+                    <div class="chart-item">SSD</div>
+                    <div class="chart-item highlight">NVMe SSD</div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-item">Support</div>
+                    <div class="chart-item">Standard</div>
+                    <div class="chart-item highlight">Priority</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="discord-cta special-cta">
+        <div class="container">
+            <div class="discord-content">
+                <i class="fas fa-gem discord-icon"></i>
+                <h2>Don't Miss This Deal!</h2>
+                <p>Limited slots available. Join Discord now to secure your special plan before it's gone!</p>
+                <a href="https://discord.com/channels/1387458915062648852/1443653688236441640" target="_blank" class="btn-discord-special">
+                    <i class="fab fa-discord"></i> Join Discord & Claim Offer
+                </a>
+                <p class="discord-note">💎 Limited time offer - Only available through Discord</p>
+                <div class="urgency-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>This offer ends in: <span id="urgency-timer">24:00:00</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-gem"></i> Special Plan Selected</h2>
+            <div id="selectedPlanDetails"></div>
+            <div class="modal-instructions">
+                <h3><i class="fab fa-discord"></i> How to Claim:</h3>
+                <ol>
+                    <li>Click the button below to join Discord</li>
+                    <li>Go to <strong>#special-offers</strong> channel</li>
+                    <li>Create a ticket with "SPECIAL PLAN" in title</li>
+                    <li>Mention this special offer code: <strong>SPCL2024</strong></li>
+                    <li>Complete payment to activate immediately</li>
+                </ol>
+                <div class="offer-code">
+                    <strong>Offer Code:</strong> <span class="code">SPCL2024</span>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <a href="https://discord.com/channels/1387458915062648852/1443647819918610462" target="_blank" class="btn-discord-modal">
+                    <i class="fab fa-discord"></i> Claim Special Offer
+                </a>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-gem"></i> Aura Node Specials</h3>
+                    <p>Limited Time Exclusive Offers</p>
+                    <p>📍 Premium performance at special prices</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Offer Terms</h3>
+                    <p><i class="fas fa-clock"></i> Limited time only</p>
+                    <p><i class="fas fa-user-friends"></i> Limited slots available</p>
+                    <p><i class="fas fa-history"></i> First come, first served</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Regular Plans</h3>
+                    <p><a href="budget-plan.html">Budget Plans</a></p>
+                    <p><a href="premium-plan.html">Premium Plans</a></p>
+                    <p><a href="ryzen-VPS.html">Ryzen VPS</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura Node Hosting. Special Plans - Limited time offers. Prices subject to change.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const endDate = new Date('2024-12-31T23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = endDate - now;
+            
+            if (distance < 0) {
+                document.querySelector('.special-banner').innerHTML = '<div class="container"><h3 style="text-align: center; padding: 2rem;">Offer Has Ended</h3></div>';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // Urgency timer (24-hour format)
+            document.getElementById('urgency-timer').textContent = 
+                `${days}d ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        // Update every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+        
+        // Special plan selection
+        document.querySelector('.select-plan-btn-special').addEventListener('click', function() {
+            const planData = {
+                name: "RYZEN 32GB VPS – POWER PACK PLAN",
+                price: "₹1,900/month",
+                original: "₹3,500/month",
+                discount: "46% OFF",
+                specs: [
+                    "12 Ryzen Cores",
+                    "32 GB DDR5 (5200 MHz)",
+                    "202400 MB NVMe SSD",
+                    "AMD Ryzen™ 9 9950X",
+                    "4.50 GHz Base Clock"
+                ]
+            };
+            
+            const detailsHTML = `
+                <div class="selected-plan special">
+                    <h3>${planData.name}</h3>
+                    <div class="selected-price-special">
+                        <span class="original">${planData.original}</span>
+                        <span class="current">${planData.price}</span>
+                        <span class="discount">${planData.discount}</span>
+                    </div>
+                    <div class="selected-specs">
+                        <h4>Specifications:</h4>
+                        <ul>
+                            ${planData.specs.map(spec => `<li><i class="fas fa-check"></i> ${spec}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="offer-note">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>Limited Time Offer:</strong> Only 5 slots remaining!
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('selectedPlanDetails').innerHTML = detailsHTML;
+            document.getElementById('cartModal').style.display = 'block';
+            
+            // Store in localStorage
+            localStorage.setItem('specialPlan', JSON.stringify(planData));
+        });
+        
+        // Small plan buttons
+        document.querySelectorAll('.btn-small-select').forEach(button => {
+            button.addEventListener('click', function() {
+                const planCard = this.closest('.special-plan-small');
+                const planName = planCard.querySelector('h4').textContent;
+                const price = planCard.querySelector('.special').textContent;
+                
+                alert(`Selected: ${planName} for ${price}/month\nJoin Discord to complete your order!`);
+            });
+        });
+    </script>
+</body>
+</html>
